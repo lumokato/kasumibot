@@ -1,0 +1,1597 @@
+[2021-02-28 09:35:16,885 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 09:35:16,886 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 09:35:17,219 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 09:35:17,220 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 09:35:17,329 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 09:35:17,329 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 09:35:17,468 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 09:35:17,468 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 09:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 09:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 09:37:02,861 hoshino] ERROR: 禁言失败 retcode=100
+[2021-02-28 09:41:49,777 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 09:41:49,778 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 09:41:50,176 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 09:41:50,177 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 09:41:50,255 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 09:41:50,255 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 09:41:50,521 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 09:41:50,522 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 09:42:08,091 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-02-28 09:42:08,092 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-02-28 09:43:18,908 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-02-28 09:43:18,909 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-02-28 09:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 09:45:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 09:46:17,772 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-02-28 09:46:17,773 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-02-28 09:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 09:50:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 09:55:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 09:55:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:00:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:00:25,010 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:05:25,021 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:05:25,021 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:10:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:18:54,467 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 10:18:54,468 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 10:18:54,892 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 10:18:54,892 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 10:18:54,997 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 10:18:54,998 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 10:18:55,254 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 10:18:55,254 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 10:20:40,252 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 10:20:40,253 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 10:20:40,312 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 10:20:40,312 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 10:20:40,437 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 10:20:40,438 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 10:20:41,506 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 10:20:41,506 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 10:21:31,325 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message 273571343.
+[2021-02-28 10:21:31,326 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 218, in wrapper
+    return await func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 196, in send_arena_sub_status
+    await bot.send(ev,'您还未绑定竞技场', at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:22:30,934 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -114427078.
+[2021-02-28 10:22:30,935 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 128, in on_query_arena
+    await bot.finish(ev, '您还未绑定竞技场', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:25:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:25:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:25:47,076 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -1909797972.
+[2021-02-28 10:25:47,077 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 134, in on_query_arena
+    await bot.finish(ev,
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:26:02,877 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message 388209174.
+[2021-02-28 10:26:02,882 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 134, in on_query_arena
+    await bot.finish(ev,
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:27:23,466 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -258230511.
+[2021-02-28 10:27:23,467 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 151, in change_arena_sub
+    await bot.send(ev,'您还未绑定竞技场',at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:27:51,393 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -2019784825.
+[2021-02-28 10:27:51,394 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 115, in on_arena_bind
+    await bot.finish(ev, '竞技场绑定成功', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:28:17,433 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -714248992.
+[2021-02-28 10:28:17,434 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 134, in on_query_arena
+    await bot.finish(ev,
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:28:37,866 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -1570087818.
+[2021-02-28 10:28:37,867 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 155, in change_arena_sub
+    await bot.finish(ev, f'{ev["match"].group(0)}成功', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:29:26,174 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -771708679.
+[2021-02-28 10:29:26,175 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 134, in on_query_arena
+    await bot.finish(ev,
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:30:12,102 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -1526228881.
+[2021-02-28 10:30:12,103 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 155, in change_arena_sub
+    await bot.finish(ev, f'{ev["match"].group(0)}成功', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:30:20,285 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when delete_arena_sub handling message 1007602133.
+[2021-02-28 10:30:20,285 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 187, in delete_arena_sub
+    await bot.finish(ev, '删除竞技场订阅成功', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:30:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:30:25,921 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message 1258944835.
+[2021-02-28 10:30:25,924 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 218, in wrapper
+    return await func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 196, in send_arena_sub_status
+    await bot.send(ev,'您还未绑定竞技场', at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:30:42,231 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -608770862.
+[2021-02-28 10:30:42,231 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 128, in on_query_arena
+    await bot.finish(ev, '您还未绑定竞技场', at_sender=True)
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:30:52,942 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when wrapper handling message -1397631932.
+[2021-02-28 10:30:52,943 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 134, in on_query_arena
+    await bot.finish(ev,
+  File "/home/kasumi/HoshinoBot/hoshino/__init__.py", line 40, in _finish
+    await _bot.send(event, message, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 10:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:40:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 10:40:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 10:59:47,711 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 10:59:47,712 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 10:59:47,818 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 10:59:47,819 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 10:59:48,058 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 10:59:48,058 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 10:59:48,076 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 10:59:48,076 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 11:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 11:00:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 11:00:27,353 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when on_query_arena handling message -864658015.
+[2021-02-28 11:00:27,354 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc/__init__.py", line 115, in on_query_arena
+    await bot.send(ev,"".join(strList),at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc/__init__.py", line 117, in on_query_arena
+    await bot.send(ev,"查询出错，请检查ID是否正确",at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 11:01:17,124 竞技场推送] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when on_query_arena handling message -1150194377.
+[2021-02-28 11:01:17,125 竞技场推送] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc/__init__.py", line 115, in on_query_arena
+    await bot.send(ev,"".join(strList),at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc/__init__.py", line 117, in on_query_arena
+    await bot.send(ev,"查询出错，请检查ID是否正确",at_sender=True)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-02-28 11:05:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 11:05:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 11:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 11:10:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 11:12:35,353 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 11:12:35,354 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 11:12:35,669 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 11:12:35,670 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 11:12:35,821 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 11:12:35,822 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 11:12:35,947 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 11:12:35,947 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 11:14:57,320 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-02-28 11:14:57,321 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-02-28 11:15:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-02-28 11:15:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-02-28 11:16:21,135 nonebot] ERROR: An exception occurred while running command ('查排名',):
+[2021-02-28 11:16:21,136 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 33, in query_by_rank
+    msg_str = Clan.rank_to_string(Clan.get_rank_status(rank), long_info = True)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-02-28 11:20:20,887 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-02-28 11:20:20,888 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 11:20:25,364 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-02-28 11:20:25,365 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-02-28 11:20:25,435 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-02-28 11:20:25,436 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-02-28 11:20:25,586 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-02-28 11:20:25,587 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-02-28 11:20:54,172 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 492003013.
+[2021-02-28 11:20:54,173 竞技场推送] ERROR: 'required_manifest_ver'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 133, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 88, in query
+    await client.login()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/pcrclient.py", line 189, in login
+    ver = manifest['required_manifest_ver']
+KeyError: 'required_manifest_ver'
+[2021-02-28 11:21:21,980 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -1913896108.
+[2021-02-28 11:21:21,981 竞技场推送] ERROR: 'required_manifest_ver'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 133, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/__init__.py", line 88, in query
+    await client.login()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrjjc2/pcrclient.py", line 189, in login
+    ver = manifest['required_manifest_ver']
+KeyError: 'required_manifest_ver'
+[2021-03-01 08:40:04,141 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-01 08:40:04,141 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-01 08:40:04,219 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-01 08:40:04,219 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-01 08:40:04,368 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-01 08:40:04,368 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:40:04,401 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-03-01 08:40:04,402 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:41:01,320 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-03-01 08:41:01,321 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:41:01,689 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-01 08:41:01,690 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-01 08:41:01,862 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-01 08:41:01,863 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-01 08:41:02,018 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-01 08:41:02,018 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:43:46,153 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-01 08:43:46,154 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-01 08:43:46,210 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-01 08:43:46,210 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-01 08:43:46,383 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-01 08:43:46,383 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:43:46,399 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-03-01 08:43:46,399 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:45:16,950 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-03-01 08:45:16,951 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:45:22,944 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-01 08:45:22,945 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-01 08:45:23,003 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-01 08:45:23,003 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-01 08:45:23,141 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-01 08:45:23,141 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:45:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 08:45:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 08:46:56,431 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-03-01 08:46:56,431 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-03-01 08:47:31,670 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-03-01 08:47:31,671 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-03-01 08:49:24,315 nonebot] ERROR: Failed to import "hoshino.modules.pcrclanbattle.clanbattle", error: No module named '_sqlite3'
+[2021-03-01 08:49:24,316 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/__init__.py", line 65, in <module>
+    from .cmdv2 import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/cmdv2.py", line 30, in <module>
+    from .argparse.argtype import *
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/argparse/argtype.py", line 5, in <module>
+    from ..battlemaster import BattleMaster
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/battlemaster.py", line 4, in <module>
+    from .dao.sqlitedao import ClanDao, MemberDao, BattleDao
+  File "/home/kasumi/HoshinoBot/hoshino/modules/pcrclanbattle/clanbattle/dao/sqlitedao.py", line 1, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:49:28,708 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-01 08:49:28,709 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-01 08:49:28,792 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-01 08:49:28,792 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/HoshinoBot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-01 08:49:28,952 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-01 08:49:28,953 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-01 08:49:36,488 nonebot] ERROR: An exception occurred while running command ('查档线',):
+[2021-03-01 08:49:36,489 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 61, in query_score_line
+    msg_str = get_score_line()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 39, in get_score_line
+    msg_str += Clan.rank_to_string(Clan.get_rank_status(1), long_info = False)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-03-01 08:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 08:50:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 08:50:53,927 nonebot] ERROR: An exception occurred while running command ('查排名',):
+[2021-03-01 08:50:53,928 nonebot] ERROR: 'period_ranking'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/__init__.py", line 33, in query_by_rank
+    msg_str = Clan.rank_to_string(Clan.get_rank_status(rank), long_info = True)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/HoshinoBot/hoshino/modules/Luna/PCRClanBattle.py", line 56, in get_page_status
+    return temp['period_ranking']
+KeyError: 'period_ranking'
+[2021-03-01 08:55:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 08:55:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 09:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 09:00:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 09:05:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 09:05:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 09:10:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 09:10:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-01 09:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-01 09:15:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/HoshinoBot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
