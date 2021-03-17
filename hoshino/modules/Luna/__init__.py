@@ -19,8 +19,8 @@ from .PCRClanBattle import ClanBattle
 Clan = ClanBattle(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
 Push_Score_Lines = None
 Crawl_Score_Lines = None
-QQGroup = 860395796
-#QQGroup = 829586700
+#QQGroup = 860395796
+QQGroup = 829586700
 minito = 30
 minito2 = 240
 @on_command('查排名', only_to_me = False)
@@ -146,12 +146,12 @@ async def write_down_score_line_scheduled():
             log.logger.debug(str(i))
     
     try:
-        await bot.send_private_msg(user_id = 309173017, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
+        await bot.send_private_msg(user_id = 2332483996, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
     except CQHttpError:
         pass
 
 
-@on_command('开启推送档线', only_to_me = False)
+@on_command('开启推送档线', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_score_line(session):
     match = re.match(r'^(\d+):(\d+)', session.current_arg)
     if not match:
@@ -174,12 +174,12 @@ async def push_top_scheduled():
     except CQHttpError:
         pass
 
-@on_command('开启推送前21', only_to_me = False)
+@on_command('开启自动推送档线', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_top(session):
     scheduler.add_job(push_top_scheduled, 'interval', minutes = minito2)
-    await session.send(message.MessageSegment.text('每小时会自动推送前21排名'))
+    await session.send(message.MessageSegment.text('每4小时会自动推送前20档线'))
 
-@on_command('开启推送排名', only_to_me = False)
+@on_command('开启自动推送排名', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_score_line(session):
     scheduler.add_job(push_laiyin_rank_scheduled, 'interval', minutes = minito)
     await session.send(message.MessageSegment.text('每30min会自动推送当前排名'))
