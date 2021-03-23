@@ -26,6 +26,13 @@ kokkoro-OLD/
 __pycache__/
 *.py[cod]
 *$py.class
+hoshino/__pycache__
+hoshino/config/__pycache__
+hoshino/modules/Luna/__pycache__
+hoshino/modules/botmanage/__pycache__
+hoshino/modules/groupmaster/__pycache__
+hoshino/modules/priconne
+
 
 # C extensions
 *.so
