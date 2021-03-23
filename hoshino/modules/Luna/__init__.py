@@ -37,6 +37,22 @@ async def query_by_rank(session):
     msg_str = Clan.rank_to_string(Clan.get_rank_status(rank), long_info = True)
     await session.send(message.MessageSegment.text(msg_str))
 
+@on_command('查行会', only_to_me = False)
+async def query_clan_score(session):
+    match = session.current_arg
+    print(match)
+    global Clan
+    msg_str = ''
+    for i in range(200):
+        tempx = Clan.get_rank_status(i)
+        if tempx['clan_name'] == match:
+            msg_str +=  Clan.rank_to_string(Clan.get_rank_status(i), long_info=True)
+            msg_str += '\n'
+            break 
+    if msg_str == '':
+        msg_str = '未找到此行会或行会目前暂时超出200名！'             
+    await session.send(message.MessageSegment.text(msg_str))
+
 def get_score_line(lst):
     global Clan
     msg_str = ''
@@ -89,22 +105,6 @@ async def query_page_score(session):
             await session.send(message.MessageSegment.text(msg_str))
             msg_str = ''
 
-@on_command('查行会', only_to_me = False)
-async def query_clan_score(session):
-    match = re.match(r'^(\d+)', session.current_arg)
-    if not match:
-        return
-    global Clan
-    msg_str = ''   
-    for i in range(20):
-        tempx = Clan.get_rank_status(i)
-        if tempx['clan_name'] == match:
-            msg_str +=  Clan.rank_to_string(tempx)
-            msg_str += '\n'
-            break 
-    if msg_str == '':
-        msg_str = '未找到此行会或行会目前暂时超出200名！'             
-    await session.send(message.MessageSegment.text(msg_str))
 
 async def push_score_line_scheduled():
     msg_str = get_score_line([1, 2, 3, 20, 50, 100, 150])
@@ -217,3 +217,12 @@ async def set_close_crawl_score_line(session):
             Crawl_Score_Lines = None
         await session.send(message.MessageSegment.text('自动爬取数据已关闭'))
 
+@on_command('排名指令查询', only_to_me = False)
+async def set_clan_help(session):
+    readme = "按排名查询：查排名 数字（例如：查排名 11）" + "\n" + \
+             "按名称查询：查行会 名称（例如：查行会 莱茵骑士团）" + "\n" + \
+             "查询当前前20名档线：查档线"  + "\n" + \
+             "查询本公会排名：查莱茵"  + "\n" + \
+             "每4小时推送当前档线：开启自动推送档线（超级用户限定）"  + "\n" + \
+             "每30分钟推送当前公会排名：开启自动推送排名（超级用户限定）"
+    await session.send(message.MessageSegment.text(readme))

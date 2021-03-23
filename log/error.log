@@ -1595,3 +1595,899 @@ Traceback (most recent call last):
   File "/home/kasumi/HoshinoBot/hoshino/modules/priconne/comic.py", line 21, in load_index
     with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
 FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-23 20:51:59,241 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 20:51:59,245 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 20:51:59,345 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 20:51:59,345 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 20:51:59,870 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 20:51:59,870 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:51:59,878 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 20:51:59,878 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:51:59,889 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 20:51:59,890 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:55:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 20:55:25,012 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 20:56:15,760 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 20:56:15,760 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 20:56:15,852 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 20:56:15,853 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 20:56:16,462 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 20:56:16,463 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:56:16,474 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 20:56:16,474 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:56:16,481 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 20:56:16,481 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:59:17,660 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 20:59:17,661 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 20:59:17,748 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 20:59:17,748 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 20:59:18,326 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 20:59:18,327 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:59:18,335 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 20:59:18,336 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 20:59:18,345 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 20:59:18,346 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:31:07,822 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 21:31:07,823 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:31:07,832 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 21:31:07,832 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:31:07,841 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 21:31:07,842 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:31:08,067 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:31:08,068 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:31:08,139 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:31:08,139 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 21:32:48,583 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:32:48,584 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:32:48,670 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:32:48,670 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 21:32:49,247 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 21:32:49,248 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:32:49,257 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 21:32:49,258 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:32:49,267 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 21:32:49,267 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:38:34,878 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'Crypto'
+[2021-03-23 21:38:34,879 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:38:34,888 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'Crypto'
+[2021-03-23 21:38:34,890 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:38:34,899 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'Crypto'
+[2021-03-23 21:38:34,899 nonebot] ERROR: No module named 'Crypto'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 1, in <module>
+    from Crypto.Cipher import AES
+ModuleNotFoundError: No module named 'Crypto'
+[2021-03-23 21:38:34,981 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:38:34,982 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:38:35,067 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:38:35,067 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 21:40:29,743 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: No module named 'msgpack'
+[2021-03-23 21:40:29,744 nonebot] ERROR: No module named 'msgpack'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 3, in <module>
+    import msgpack
+ModuleNotFoundError: No module named 'msgpack'
+[2021-03-23 21:40:29,753 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClient", error: No module named 'msgpack'
+[2021-03-23 21:40:29,754 nonebot] ERROR: No module named 'msgpack'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 3, in <module>
+    import msgpack
+ModuleNotFoundError: No module named 'msgpack'
+[2021-03-23 21:40:29,761 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRPack", error: No module named 'msgpack'
+[2021-03-23 21:40:29,762 nonebot] ERROR: No module named 'msgpack'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\__init__.py", line 18, in <module>
+    from .PCRClanBattle import ClanBattle
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClanBattle.py", line 6, in <module>
+    from .PCRClient import PCRClient
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRClient.py", line 2, in <module>
+    from .PCRPack import *
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\Luna\PCRPack.py", line 3, in <module>
+    import msgpack
+ModuleNotFoundError: No module named 'msgpack'
+[2021-03-23 21:40:29,794 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:40:29,794 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:40:29,866 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:40:29,866 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 21:41:51,113 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:41:51,114 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:41:51,205 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:41:51,205 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 21:47:42,386 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 21:47:42,387 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 21:47:42,463 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 21:47:42,463 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 22:00:42,405 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:00:42,406 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:09:48,264 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 22:09:48,264 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 22:09:48,351 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 22:09:48,352 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 22:16:20,901 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:16:20,901 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:20:25,023 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:20:25,025 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:30:30,552 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:30:30,556 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:35:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:35:25,014 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:40:32,026 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:40:32,028 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:41:48,546 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 22:41:48,547 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 22:41:48,624 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 22:41:48,625 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 22:45:25,015 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:45:25,023 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:50:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:50:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:55:25,011 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 22:55:25,012 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-23 22:57:19,112 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-23 22:57:19,113 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-23 22:57:19,180 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-23 22:57:19,181 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-23 23:00:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-23 23:00:25,010 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
