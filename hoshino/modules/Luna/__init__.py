@@ -86,7 +86,7 @@ def get_grade_score(rank):
 @on_command('查莱茵', only_to_me = False)
 async def query_laiyin_score(session):
     if session.current_arg == '':
-        msg_str = get_grade_score(17)
+        msg_str = get_grade_score(15)
     await session.send(message.MessageSegment.text(msg_str))
 
 @on_command('查页', only_to_me = False)

@@ -2491,3 +2491,1429 @@ Traceback (most recent call last):
   File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
     with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
 FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 16:36:05,019 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 16:36:05,023 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 16:36:05,129 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 16:36:05,129 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 16:40:25,020 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:40:25,027 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:02:01,773 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:02:01,773 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:02:01,863 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:02:01,863 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:05:25,010 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:05:25,012 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:05:58,519 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:05:58,520 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:05:58,605 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:05:58,606 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:08:52,057 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:08:52,058 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:08:52,152 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:08:52,152 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:11:47,135 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:11:47,136 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:11:47,205 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:11:47,206 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:12:44,486 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:12:44,486 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:12:44,557 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:12:44,558 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:14:01,617 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:14:01,617 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:14:01,692 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:14:01,693 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:15:25,014 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:17:51,082 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:17:51,083 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:17:51,166 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:17:51,167 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:18:05,014 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -871222940.
+[2021-03-28 17:18:05,016 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    while client.shouldLogin:
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:19:16,033 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -1156251150.
+[2021-03-28 17:19:16,033 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    f'''
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:20:18,176 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message 572280904.
+[2021-03-28 17:20:18,176 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    f'''
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:20:25,026 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:20:25,026 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:21:26,788 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message 1427857630.
+[2021-03-28 17:21:26,789 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    f'''
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:21:34,645 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -1297920551.
+[2021-03-28 17:21:34,655 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    f'''
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:21:55,180 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -2076286022.
+[2021-03-28 17:21:55,182 竞技场推送] ERROR: 'NoneType' object has no attribute 'shouldLogin'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    f'''
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'shouldLogin'
+[2021-03-28 17:23:05,675 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:23:05,676 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:23:05,764 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:23:05,765 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:23:59,031 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -214346964.
+[2021-03-28 17:23:59,032 竞技场推送] ERROR: 'NoneType' object has no attribute 'callapi'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 91, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'NoneType' object has no attribute 'callapi'
+[2021-03-28 17:39:45,006 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:39:45,007 nonebot] ERROR: __init__() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = pcrclient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:39:45,015 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:39:45,016 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:39:45,049 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:39:45,049 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:39:45,150 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:39:45,151 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:40:25,026 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:40:25,026 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:41:50,828 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:41:50,829 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:41:50,918 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:41:50,918 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:42:14,553 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:42:14,554 nonebot] ERROR: __init__() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = pcrclient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:42:14,560 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:42:14,561 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:43:20,478 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:43:20,479 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:43:20,573 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:43:20,573 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:43:59,602 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:43:59,603 nonebot] ERROR: __init__() takes 2 positional arguments but 4 were given
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = pcrclient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+TypeError: __init__() takes 2 positional arguments but 4 were given
+[2021-03-28 17:43:59,609 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:43:59,610 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:50:19,628 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:50:19,628 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:50:19,702 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:50:19,703 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:50:48,597 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:50:48,598 nonebot] ERROR: 'pcrclient' object has no attribute 'Callapi'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = QClient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 91, in __init__
+    self.Client.login(uid, access_key)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 69, in login
+    self.manifest = self.Callapi('source_ini/get_maintenance_status', {}, False)
+AttributeError: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:50:48,605 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:50:48,605 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:52:05,701 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:52:05,703 nonebot] ERROR: 'pcrclient' object has no attribute 'Callapi'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = QClient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 91, in __init__
+    self.Client.login(uid, access_key)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 73, in login
+    log.logger.debug(str(self.Callapi('tool/sdk_login', {"uid": uid, "access_key" : access_key, "platform" : self.default_headers["PLATFORM-ID"], "channel_id" : self.default_headers["CHANNEL-ID"]}) ))
+AttributeError: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:52:05,721 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:52:05,723 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:52:05,759 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:52:05,760 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:52:05,842 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:52:05,842 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:53:36,743 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:53:36,743 nonebot] ERROR: 'pcrclient' object has no attribute 'Callapi'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = QClient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 91, in __init__
+    self.Client.login(uid, access_key)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 73, in login
+    log.logger.debug(str(self.Callapi('tool/sdk_login', {"uid": uid, "access_key" : access_key, "platform" : self.default_headers["PLATFORM-ID"], "channel_id" : self.default_headers["CHANNEL-ID"]}) ))
+AttributeError: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:53:36,779 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:53:36,780 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:53:36,821 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:53:36,822 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:53:36,891 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:53:36,891 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:55:25,021 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:55:25,023 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 17:57:54,964 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:57:54,966 nonebot] ERROR: 'pcrclient' object has no attribute 'Callapi'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = QClient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 91, in __init__
+    self.Client.login(uid, access_key)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 73, in login
+    log.logger.debug(str(self.Callapi('tool/sdk_login', {"uid": uid, "access_key" : access_key, "platform" : self.default_headers["PLATFORM-ID"], "channel_id" : self.default_headers["CHANNEL-ID"]}) ))
+AttributeError: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:57:54,982 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:57:54,983 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:57:56,888 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:57:56,889 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:57:56,960 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:57:56,961 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 17:59:27,101 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:59:27,101 nonebot] ERROR: 'pcrclient' object has no attribute 'Callapi'
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 34, in <module>
+    client = QClient(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 91, in __init__
+    self.Client.login(uid, access_key)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 73, in login
+    log.logger.debug(str(self.Callapi('tool/sdk_login', {"uid": uid, "access_key" : access_key, "platform" : self.default_headers["PLATFORM-ID"], "channel_id" : self.default_headers["CHANNEL-ID"]}) ))
+AttributeError: 'pcrclient' object has no attribute 'Callapi'
+[2021-03-28 17:59:27,130 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 17:59:27,132 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-28 17:59:27,386 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 17:59:27,387 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 17:59:27,460 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 17:59:27,461 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:00:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:00:25,016 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 18:01:35,372 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:01:35,374 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:01:35,444 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:01:35,445 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:02:03,437 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message 1476812820.
+[2021-03-28 18:02:03,438 竞技场推送] ERROR: 'QClient' object has no attribute 'callapi'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 91, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+AttributeError: 'QClient' object has no attribute 'callapi'
+[2021-03-28 18:05:25,012 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:05:25,019 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 18:06:45,467 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:06:45,468 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:06:45,538 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:06:45,538 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:06:57,691 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message 788615298.
+[2021-03-28 18:06:57,692 竞技场推送] ERROR: 'QClient' object has no attribute 'viewer_id'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 91, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 42, in callapi
+    request['viewer_id'] = encrypt(str(self.viewer_id), key).decode()
+AttributeError: 'QClient' object has no attribute 'viewer_id'
+[2021-03-28 18:08:51,696 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:08:51,697 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:08:51,787 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:08:51,788 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:09:03,042 竞技场推送] ERROR: <class 'AttributeError'> occured when wrapper handling message -1318730463.
+[2021-03-28 18:09:03,042 竞技场推送] ERROR: 'QClient' object has no attribute 'viewer_id'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 91, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 47, in query
+    res = (await client.callapi('/profile/get_profile', {
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py", line 42, in callapi
+    request['viewer_id'] = encrypt(str(self.viewer_id), key).decode()
+AttributeError: 'QClient' object has no attribute 'viewer_id'
+[2021-03-28 18:09:53,626 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:09:53,627 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:09:53,699 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:09:53,699 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:09:54,325 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.bsgamesdk", error: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:09:54,326 nonebot] ERROR: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 5, in <module>
+    from .pcrclient import pcrclient, ApiException, QClient
+ImportError: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:09:54,333 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:09:54,334 nonebot] ERROR: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 5, in <module>
+    from .pcrclient import pcrclient, ApiException, QClient
+ImportError: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:09:54,339 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.safeservice", error: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:09:54,340 nonebot] ERROR: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+Traceback (most recent call last):
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\nonebot\plugin.py", line 249, in load_plugin
+    module = importlib.import_module(module_path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 5, in <module>
+    from .pcrclient import pcrclient, ApiException, QClient
+ImportError: cannot import name 'QClient' from 'hoshino.modules.pcrjjc3.pcrclient' (c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\pcrclient.py)
+[2021-03-28 18:10:25,016 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:10:25,017 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 18:10:40,924 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:10:40,925 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:10:41,027 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:10:41,027 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:10:51,891 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message 678204571.
+[2021-03-28 18:10:51,893 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 49, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:14:14,159 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:14:14,159 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:14:14,233 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:14:14,234 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 18:23:29,096 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -1194096374.
+[2021-03-28 18:23:29,097 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:27:21,361 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -808142436.
+[2021-03-28 18:27:21,362 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:30:06,498 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -1357696903.
+[2021-03-28 18:30:06,498 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:30:48,444 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -669777681.
+[2021-03-28 18:30:48,446 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:30:48,452 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:30:48,454 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 18:31:10,480 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message 1092440405.
+[2021-03-28 18:31:10,480 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:31:44,760 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message 907698627.
+[2021-03-28 18:31:44,761 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:32:26,793 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -1468074912.
+[2021-03-28 18:32:26,794 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:36:18,194 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -545667850.
+[2021-03-28 18:36:18,194 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:36:18,207 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:36:18,209 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 18:39:48,469 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message 1181783372.
+[2021-03-28 18:39:48,470 竞技场推送] ERROR: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 97, in on_query_arena
+    res = await query(id)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\pcrjjc3\__init__.py", line 53, in query
+    res = (await client.callapi('/profile/get_profile', {
+TypeError: object dict can't be used in 'await' expression
+[2021-03-28 18:56:02,034 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 18:56:02,036 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 18:56:02,150 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 18:56:02,152 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 19:00:25,011 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:00:25,013 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:02:46,314 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 19:02:46,315 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 19:02:46,427 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 19:02:46,427 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 19:05:25,002 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:05:25,002 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:07:42,827 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 19:07:42,827 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 19:07:42,917 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 19:07:42,918 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 19:10:25,001 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:10:25,002 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:15:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:15:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:20:25,001 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:20:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:25:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:30:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:30:25,010 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:35:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:35:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:40:25,002 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:40:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 19:42:48,497 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\equip.png
+[2021-03-28 19:42:48,498 chara] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\equip.png'
+[2021-03-28 19:42:48,605 hoshino] ERROR: 缺少图片资源：./res/img\priconne\gadget\thumb-up-i.png
+[2021-03-28 19:42:48,608 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\arena\__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\R.py", line 50, in open
+    return Image.open(self.path)
+  File "c:\users\suzto_naw1ufi\appdata\local\programs\python\python38\lib\site-packages\PIL\Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\gadget\\thumb-up-i.png'
+[2021-03-28 19:45:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:45:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+Traceback (most recent call last):
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\service.py", line 325, in wrapper
+    ret = await func()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 106, in update_seeker
+    index = load_index()
+  File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
