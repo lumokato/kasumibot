@@ -135,3 +135,7 @@ venv.bak/
 .mypy_cache/
 
 *.csv
+
+hoshino/modules/pcrjjc2/*.json
+hoshino/modules/pcrjjc2/*.xml
+hoshino/modules/pcrjjc2/__pycache__/*
