@@ -136,6 +136,6 @@ venv.bak/
 
 *.csv
 
-hoshino/modules/pcrjjc2/*.json
-hoshino/modules/pcrjjc2/*.xml
-hoshino/modules/pcrjjc2/__pycache__/*
+hoshino/modules/pcrjjc3/*.json
+hoshino/modules/pcrjjc3/*.xml
+hoshino/modules/pcrjjc3/__pycache__/*
