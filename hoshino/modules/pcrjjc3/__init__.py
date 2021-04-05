@@ -96,9 +96,10 @@ async def on_query_arena(bot, ev):
             res = await query(id)
             await bot.finish(ev, 
 f'''
+用户名称：{res["user_name"]}
 竞技场排名：{res["arena_rank"]}
 公主竞技场排名：{res["grand_arena_rank"]}''', at_sender=True)
-        except ApiException as e:
+        except (ApiException, TypeError) as e:
             await bot.finish(ev, f'查询出错，{e}', at_sender=True)
 
 
