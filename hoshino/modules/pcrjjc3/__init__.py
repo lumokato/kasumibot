@@ -31,8 +31,8 @@ root = {
 }
 
 cache = {}
-client = pcrclient(1314202001949)
-client.login("2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+client = pcrclient(1223950737906)
+client.login("2020061221263800100000", "d145b29050641dac2f8b19df0afe0e59")
 
 lck = Lock()
 
@@ -46,10 +46,13 @@ qlck = Lock()
 
 async def query(id: str):
     async with qlck:
-        res = client.callapi('/profile/get_profile', {
-                'target_viewer_id': int(id)
-            })['user_info']
-        return res
+        try:
+            res = client.callapi('/profile/get_profile', {
+                    'target_viewer_id': int(id)
+                })['user_info']
+            return res
+        except KeyError:
+            return 0
 
 def save_binds():
     with open(config, 'w') as fp:
@@ -93,7 +96,6 @@ async def on_query_arena(bot, ev):
             res = await query(id)
             await bot.finish(ev, 
 f'''
-用户名称：{res["user_name"]}
 竞技场排名：{res["arena_rank"]}
 公主竞技场排名：{res["grand_arena_rank"]}''', at_sender=True)
         except ApiException as e:
@@ -182,13 +184,13 @@ async def on_arena_schedule():
             last = cache[user]
             cache[user] = res
 
-            if res[0] != last[0] and info['arena_on']:
+            if res[0] > last[0] and info['arena_on']:
                 await bot.send_group_msg(
                     group_id = int(info['gid']),
                     message = f'[CQ:at,qq={info["uid"]}]您的竞技场排名发生变化：{last[0]}->{res[0]}，降低了{res[0]-last[0]}名。'
                 )
 
-            if res[1] != last[1] and info['grand_arena_on']:
+            if res[1] > last[1] and info['grand_arena_on']:
                 await bot.send_group_msg(
                     group_id = int(info['gid']),
                     message = f'[CQ:at,qq={info["uid"]}]您的公主竞技场排名发生变化：{last[1]}->{res[1]}，降低了{res[1]-last[1]}名。'

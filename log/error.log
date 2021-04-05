@@ -3917,3 +3917,2559 @@ Traceback (most recent call last):
   File "c:\Users\suzto_naw1ufi\kasumibot\hoshino\modules\priconne\comic.py", line 21, in load_index
     with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
 FileNotFoundError: [Errno 2] No such file or directory: './res/img\\priconne\\comic\\index.json'
+[2021-03-28 08:06:54,108 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-28 08:06:54,108 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-28 08:06:54,175 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-28 08:06:54,175 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-28 08:06:54,315 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-28 08:06:54,316 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-28 08:09:51,187 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 107658520.
+[2021-03-28 08:09:51,187 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 08:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:10:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:10:26,669 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -1743902533.
+[2021-03-28 08:10:26,669 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 08:12:02,639 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-28 08:12:02,640 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-28 08:12:02,708 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-28 08:12:02,709 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-28 08:12:02,842 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-28 08:12:02,842 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-28 08:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:20:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:20:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:25:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:45:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:50:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 08:55:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 08:55:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:00:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:00:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:10:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:10:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:20:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:45:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:45:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:50:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:55:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 09:55:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 09:55:36,140 chat] ERROR: <class 'aiocqhttp.exceptions.ActionFailed'> occured when chat_queshi handling message 1046149587.
+[2021-03-28 09:55:36,140 chat] ERROR: <ActionFailed, retcode=100>
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/groupmaster/chat.py", line 62, in chat_queshi
+    await bot.send(ctx, R.img('确实.jpg').cqcode)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 256, in send
+    return await self.send_msg(**params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/__init__.py", line 223, in call_action
+    return await self._api.call_action(action=action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 186, in call_action
+    result = await self._wsr_api.call_action(action, **params)
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 161, in call_action
+    return _handle_api_result(
+  File "/usr/local/lib/python3.8/site-packages/aiocqhttp/api_impl.py", line 51, in _handle_api_result
+    raise ActionFailed(retcode=result.get('retcode'))
+aiocqhttp.exceptions.ActionFailed: <ActionFailed, retcode=100>
+[2021-03-28 10:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:00:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:10:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:15:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:15:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:20:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:25:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:25:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:35:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:35:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:45:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:50:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 10:55:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 10:55:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:00:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:05:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:10:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:10:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:20:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:25:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:25:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:45:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:45:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:50:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 11:55:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 11:55:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:00:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:00:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:05:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:10:25,013 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:10:25,014 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:20:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:25:25,017 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:25:25,018 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:30:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:35:25,013 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:35:25,013 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:40:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:40:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:45:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:45:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:50:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:50:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 12:55:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 12:55:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:00:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:00:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:05:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:05:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:10:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:10:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:15:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:15:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:20:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:20:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:25:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:25:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:35:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:35:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:40:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:40:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:45:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:45:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:50:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 13:55:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 13:55:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:00:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:00:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:05:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:10:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:15:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:15:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:20:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:20:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:25:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:25:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:30:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:30:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:35:25,011 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:35:25,012 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:40:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:40:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:45:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:45:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:50:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:50:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 14:55:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 14:55:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:00:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:00:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:05:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:10:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:10:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:15:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:20:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:20:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:25:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:25:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:30:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:30:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:35:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:35:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:40:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:40:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:45:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:45:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:50:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:50:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 15:55:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 15:55:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:00:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:00:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:05:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:10:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:10:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:20:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:35:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:35:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:40:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:45:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:50:25,014 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:50:25,014 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 16:55:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 16:55:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:00:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:00:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:10:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:10:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:20:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:35:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:35:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:45:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:50:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 17:55:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 17:55:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:00:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:10:25,002 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:10:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:20:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:20:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:30:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:30:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:35:25,010 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:35:25,011 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:40:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:45:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:50:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 18:55:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 18:55:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:00:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:10:25,012 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:10:25,012 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:20:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:20:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:25:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:25:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:30:25,009 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:30:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:35:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:35:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:40:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:45:25,017 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:45:25,017 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:50:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:50:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 19:55:25,010 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 19:55:25,010 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:00:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:00:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:05:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:10:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:10:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:15:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:15:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:20:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:20:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:25:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:25:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:30:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:30:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:35:25,015 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:35:25,015 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:40:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:40:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:45:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:45:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:50:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:50:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 20:55:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 20:55:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:00:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:00:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:05:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:05:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:10:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:10:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:15:25,007 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:20:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:20:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:25:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:25:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:30:25,008 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:30:25,009 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:35:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:35:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:40:25,003 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:40:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:45:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:45:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:50:25,007 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:50:25,008 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 21:55:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 21:55:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:00:25,002 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:00:25,003 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:05:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:05:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:10:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:10:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:15:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:15:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:20:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:20:25,004 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:25:25,011 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:25:25,011 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:30:25,013 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:30:25,013 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:35:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:35:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:40:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:40:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:45:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:45:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:50:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:50:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 22:55:25,051 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 22:55:25,052 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 23:00:25,005 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 23:00:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 23:05:25,004 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 23:05:25,005 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 23:09:13,515 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -1439151559.
+[2021-03-28 23:09:13,516 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 23:09:59,662 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 858856323.
+[2021-03-28 23:09:59,663 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 23:10:15,802 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -1550973422.
+[2021-03-28 23:10:15,803 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 23:10:25,006 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 23:10:25,006 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 23:13:28,843 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -729205116.
+[2021-03-28 23:13:28,844 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 23:14:00,986 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -993791037.
+[2021-03-28 23:14:00,986 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-28 23:15:25,367 pcr-comic] ERROR: <class 'FileNotFoundError'> occured when doing scheduled job update_seeker.
+[2021-03-28 23:15:25,368 pcr-comic] ERROR: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 325, in wrapper
+    ret = await func()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 106, in update_seeker
+    index = load_index()
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/comic.py", line 21, in load_index
+    with open(R.get('img/priconne/comic/index.json').path, encoding='utf8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/comic/index.json'
+[2021-03-28 23:20:23,163 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-28 23:20:23,164 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-28 23:20:23,272 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-28 23:20:23,273 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-28 23:20:23,503 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-28 23:20:23,503 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-28 23:22:12,970 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/equip.png
+[2021-03-28 23:22:12,970 chara] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/chara.py", line 26, in <module>
+    gadget_equip = R.img('priconne/gadget/equip.png').open()
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/equip.png'
+[2021-03-28 23:22:13,059 hoshino] ERROR: 缺少图片资源：./res/img/priconne/gadget/thumb-up-i.png
+[2021-03-28 23:22:13,059 pcr-arena] ERROR: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/arena/__init__.py", line 31, in <module>
+    thumb_up_i = R.img('priconne/gadget/thumb-up-i.png').open().resize((16, 16), Image.LANCZOS)
+  File "/home/kasumi/kasumibot/hoshino/R.py", line 50, in open
+    return Image.open(self.path)
+  File "/usr/local/lib/python3.8/site-packages/PIL/Image.py", line 2904, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: './res/img/priconne/gadget/thumb-up-i.png'
+[2021-03-28 23:22:13,222 nonebot] ERROR: Failed to import "hoshino.modules.priconne.games", error: No module named '_sqlite3'
+[2021-03-28 23:22:13,222 nonebot] ERROR: No module named '_sqlite3'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/priconne/games/__init__.py", line 2, in <module>
+    import sqlite3
+  File "/usr/local/lib/python3.8/sqlite3/__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "/usr/local/lib/python3.8/sqlite3/dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ModuleNotFoundError: No module named '_sqlite3'
+[2021-03-28 23:31:34,994 nonebot] ERROR: Failed to import "hoshino.modules.Luna.PCRClanBattle", error: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+[2021-03-28 23:31:35,000 nonebot] ERROR: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 697, in _update_chunk_length
+    self.chunk_left = int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 438, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 764, in read_chunked
+    self._update_chunk_length()
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 701, in _update_chunk_length
+    raise InvalidChunkLength(self, line)
+urllib3.exceptions.InvalidChunkLength: InvalidChunkLength(got length b'', 0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 572, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 793, in read_chunked
+    self._original_response.close()
+  File "/usr/local/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 455, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/__init__.py", line 19, in <module>
+    Clan = ClanBattle(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClanBattle.py", line 48, in __init__
+    self.Client.login(uid, access_key)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClient.py", line 77, in login
+    self.Callapi("load/index", {"carrier": "HUAWEI"})
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClient.py", line 51, in Callapi
+    resp = self.conn.post(url= self.urlroot + apiurl,
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 590, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 756, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+[2021-03-28 23:32:57,792 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.pcrclient", error: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+[2021-03-28 23:32:57,792 nonebot] ERROR: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 697, in _update_chunk_length
+    self.chunk_left = int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 438, in _error_catcher
+    yield
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 764, in read_chunked
+    self._update_chunk_length()
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 701, in _update_chunk_length
+    raise InvalidChunkLength(self, line)
+urllib3.exceptions.InvalidChunkLength: InvalidChunkLength(got length b'', 0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 753, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 572, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 793, in read_chunked
+    self._original_response.close()
+  File "/usr/local/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.8/site-packages/urllib3/response.py", line 455, in _error_catcher
+    raise ProtocolError("Connection broken: %r" % e, e)
+urllib3.exceptions.ProtocolError: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 35, in <module>
+    client.login("2020061221263800100000", "d145b29050641dac2f8b19df0afe0e59")
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/pcrclient.py", line 78, in login
+    self.Home = self.callapi("home/index", {'message_id': 1, 'tips_id_list': [], 'is_first': 1, 'gold_history': 0})
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/pcrclient.py", line 51, in callapi
+    resp = self.conn.post(url= self.urlroot + apiurl,
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 590, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/requests/sessions.py", line 697, in send
+    r.content
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 831, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "/usr/local/lib/python3.8/site-packages/requests/models.py", line 756, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read))
+[2021-03-28 23:32:57,803 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: Service name "竞技场推送" already exist!
+[2021-03-28 23:32:57,804 nonebot] ERROR: Service name "竞技场推送" already exist!
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 21, in <module>
+    sv = SafeService('竞技场推送',help_=sv_help, bundle='pcr查询')
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 14, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/service.py", line 128, in __init__
+    assert self.name not in _loaded_services, f'Service name "{self.name}" already exist!'
+AssertionError: Service name "竞技场推送" already exist!
+[2021-03-29 23:00:40,142 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message -1479826646.
+[2021-03-29 23:00:40,143 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-29 23:01:16,710 nonebot] ERROR: An exception occurred while running command ('查莱茵',):
+[2021-03-29 23:01:16,711 nonebot] ERROR: 'required_manifest_ver'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 881, in _real_run_command
+    await asyncio.wait_for(future, timeout)
+  File "/usr/local/lib/python3.8/asyncio/tasks.py", line 455, in wait_for
+    return await fut
+  File "/usr/local/lib/python3.8/site-packages/nonebot/command/__init__.py", line 173, in run
+    await self.func(session)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/__init__.py", line 89, in query_laiyin_score
+    msg_str = get_grade_score(15)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/__init__.py", line 76, in get_grade_score
+    tempx = Clan.get_rank_status(i)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClanBattle.py", line 59, in get_rank_status
+    temp1 = self.get_page_status((rank - 1) // 10)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClanBattle.py", line 54, in get_page_status
+    self.Client.login(self.uid, self.access_key)
+  File "/home/kasumi/kasumibot/hoshino/modules/Luna/PCRClient.py", line 70, in login
+    ver = self.manifest["required_manifest_ver"]
+KeyError: 'required_manifest_ver'
+[2021-03-30 00:34:50,439 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 1237697030.
+[2021-03-30 00:34:50,439 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-30 02:03:23,073 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 1052963472.
+[2021-03-30 02:03:23,073 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-30 02:04:40,442 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 1319634463.
+[2021-03-30 02:04:40,443 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-30 09:32:09,283 竞技场推送] ERROR: <class 'KeyError'> occured when wrapper handling message 780679127.
+[2021-03-30 09:32:09,284 竞技场推送] ERROR: 'user_info'
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 93, in on_query_arena
+    res = await query(id)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49, in query
+    res = client.callapi('/profile/get_profile', {
+KeyError: 'user_info'
+[2021-03-30 12:28:12,553 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.pcrclient", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:28:12,554 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:28:12,559 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.safeservice", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:28:12,559 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:28:12,563 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:28:12,564 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:28:12,567 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.PCRPack", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:28:12,567 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:29:17,810 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.pcrclient", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:29:17,810 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:29:17,815 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.safeservice", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:29:17,816 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:29:17,820 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.rsacr", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:29:17,820 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-30 12:29:17,826 nonebot] ERROR: Failed to import "hoshino.modules.pcrjjc3.PCRPack", error: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+[2021-03-30 12:29:17,826 nonebot] ERROR: inconsistent use of tabs and spaces in indentation (__init__.py, line 49)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/nonebot/plugin.py", line 274, in load_plugin
+    module = importlib.import_module(module_path)
+  File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 49
+    try:
+       ^
+TabError: inconsistent use of tabs and spaces in indentation
+[2021-03-31 21:05:31,705 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -1251853169.
+[2021-03-31 21:05:31,705 竞技场推送] ERROR: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 99, in on_query_arena
+    用户名称：{res["user_name"]}
+TypeError: 'int' object is not subscriptable
+[2021-04-04 02:57:17,374 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -1600793546.
+[2021-04-04 02:57:17,374 竞技场推送] ERROR: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 99, in on_query_arena
+    竞技场排名：{res["arena_rank"]}
+TypeError: 'int' object is not subscriptable
+[2021-04-04 02:59:10,225 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -678239072.
+[2021-04-04 02:59:10,226 竞技场推送] ERROR: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 99, in on_query_arena
+    竞技场排名：{res["arena_rank"]}
+TypeError: 'int' object is not subscriptable
+[2021-04-05 03:55:56,321 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message -70093958.
+[2021-04-05 03:55:56,322 竞技场推送] ERROR: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 99, in on_query_arena
+    竞技场排名：{res["arena_rank"]}
+TypeError: 'int' object is not subscriptable
+[2021-04-05 03:56:07,883 竞技场推送] ERROR: <class 'TypeError'> occured when wrapper handling message 1802333931.
+[2021-04-05 03:56:07,883 竞技场推送] ERROR: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/kasumi/kasumibot/hoshino/msghandler.py", line 28, in handle_message
+    await sf.func(bot, event)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/safeservice.py", line 25, in wrapper
+    return await func(*args, **kwargs)
+  File "/home/kasumi/kasumibot/hoshino/modules/pcrjjc3/__init__.py", line 99, in on_query_arena
+    竞技场排名：{res["arena_rank"]}
+TypeError: 'int' object is not subscriptable
