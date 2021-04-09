@@ -24,15 +24,8 @@ kokkoro-OLD/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
+*.pyc
 *$py.class
-hoshino/__pycache__
-hoshino/config/__pycache__
-hoshino/modules/Luna/__pycache__
-hoshino/modules/botmanage/__pycache__
-hoshino/modules/groupmaster/__pycache__
-hoshino/modules/priconne
-
 
 # C extensions
 *.so
@@ -135,7 +128,5 @@ venv.bak/
 .mypy_cache/
 
 *.csv
-
-hoshino/modules/pcrjjc3/*.json
-hoshino/modules/pcrjjc3/*.xml
-hoshino/modules/pcrjjc3/__pycache__/*
+hoshino/modules/pcrjjc3/binds.json
+log/error.log

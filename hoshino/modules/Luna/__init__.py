@@ -16,11 +16,11 @@ from nonebot import message
 from nonebot import get_bot
 from nonebot import log
 from .PCRClanBattle import ClanBattle
-Clan = ClanBattle(1314202001949, "2020081016480401600000", "204ea6141f2eed91eb4a3df3d2c1b6e7")
+from hoshino.config.login import viewer_id, uid, access_key, QQGroup, QQid
+
+Clan = ClanBattle(viewer_id, uid, access_key)
 Push_Score_Lines = None
 Crawl_Score_Lines = None
-#QQGroup = 860395796
-QQGroup = 829586700
 minito = 30
 minito2 = 240
 @on_command('查排名', only_to_me = False)
@@ -110,12 +110,12 @@ async def push_score_line_scheduled():
     msg_str = get_score_line([1, 2, 3, 20, 50, 100, 150])
     bot = get_bot()
     try:
-        await bot.send_group_msg(group_id=829586700, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
+        await bot.send_group_msg(group_id=QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
     except CQHttpError:
         pass
 
 async def push_laiyin_rank_scheduled():
-    msg_str = get_grade_score(17)
+    msg_str = get_grade_score(15)
     bot = get_bot()
     try:
         await bot.send_group_msg(group_id=QQGroup, message=message.MessageSegment.text("公会战排名实时播报：\n") + message.MessageSegment.text(msg_str))
@@ -127,7 +127,7 @@ async def write_down_score_line_scheduled():
     bot = get_bot()
     cnt = 0
     try:
-        await bot.send_private_msg(user_id = 2332483996, message = message.MessageSegment.text('开始爬取数据'))
+        await bot.send_private_msg(user_id = QQid, message = message.MessageSegment.text('开始爬取数据'))
     except CQHttpError:
         pass
     with open('score_line.csv', 'w', newline='') as f:
@@ -146,7 +146,7 @@ async def write_down_score_line_scheduled():
             log.logger.debug(str(i))
     
     try:
-        await bot.send_private_msg(user_id = 2332483996, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
+        await bot.send_private_msg(user_id = QQid, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
     except CQHttpError:
         pass
 

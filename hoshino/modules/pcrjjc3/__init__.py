@@ -8,6 +8,7 @@ from os.path import dirname, join, exists
 from copy import deepcopy
 from traceback import format_exc
 from .safeservice import SafeService
+from hoshino.config.login import viewer_id, uid, access_key
 
 sv_help = '''[竞技场绑定 uid] 绑定竞技场排名变动推送，默认双场均启用，仅排名降低时推送
 [竞技场查询 (uid)] 查询竞技场简要信息
@@ -31,8 +32,8 @@ root = {
 }
 
 cache = {}
-client = pcrclient(1223950737906)
-client.login("2020061221263800100000", "d145b29050641dac2f8b19df0afe0e59")
+client = pcrclient(viewer_id)
+client.login(uid, access_key)
 
 lck = Lock()
 
@@ -46,13 +47,10 @@ qlck = Lock()
 
 async def query(id: str):
     async with qlck:
-        try:
-            res = client.callapi('/profile/get_profile', {
-                    'target_viewer_id': int(id)
-                })['user_info']
-            return res
-        except KeyError:
-            return 0
+        res = client.callapi('/profile/get_profile', {
+                'target_viewer_id': int(id)
+            })
+        return res['user_info']
 
 def save_binds():
     with open(config, 'w') as fp:
@@ -99,8 +97,9 @@ f'''
 用户名称：{res["user_name"]}
 竞技场排名：{res["arena_rank"]}
 公主竞技场排名：{res["grand_arena_rank"]}''', at_sender=True)
-        except (ApiException, TypeError) as e:
-            await bot.finish(ev, f'查询出错，{e}', at_sender=True)
+        except KeyError:
+            client.login(uid, access_key)
+            await bot.finish(ev, f'查询出错', at_sender=True)
 
 
 @sv.on_rex('(启用|停止)(公主)?竞技场订阅')
@@ -204,7 +203,8 @@ async def on_arena_schedule():
                     binds.pop(user)
                     save_binds()
                 sv.logger.info(f'已经自动删除错误的uid={info["id"]}')
-        except:
+        except KeyError:
+            client.login(uid, access_key)
             sv.logger.info(f'对{info["id"]}的检查出错\n{format_exc()}')
 
 @sv.on_notice('group_decrease.leave')
