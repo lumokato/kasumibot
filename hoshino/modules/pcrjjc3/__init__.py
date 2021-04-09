@@ -8,7 +8,7 @@ from os.path import dirname, join, exists
 from copy import deepcopy
 from traceback import format_exc
 from .safeservice import SafeService
-from hoshino.config.login import viewer_id, uid, access_key
+from hoshino.config import login as lg
 
 sv_help = '''[竞技场绑定 uid] 绑定竞技场排名变动推送，默认双场均启用，仅排名降低时推送
 [竞技场查询 (uid)] 查询竞技场简要信息
@@ -32,8 +32,8 @@ root = {
 }
 
 cache = {}
-client = pcrclient(viewer_id)
-client.login(uid, access_key)
+client = pcrclient(lg.viewer_id)
+client.login(lg.uid, lg.access_key)
 
 lck = Lock()
 
@@ -98,7 +98,7 @@ f'''
 竞技场排名：{res["arena_rank"]}
 公主竞技场排名：{res["grand_arena_rank"]}''', at_sender=True)
         except KeyError:
-            client.login(uid, access_key)
+            client.login(lg.uid, lg.access_key)
             await bot.finish(ev, f'查询出错', at_sender=True)
 
 
@@ -204,7 +204,7 @@ async def on_arena_schedule():
                     save_binds()
                 sv.logger.info(f'已经自动删除错误的uid={info["id"]}')
         except KeyError:
-            client.login(uid, access_key)
+            client.login(lg.uid, lg.access_key)
             sv.logger.info(f'对{info["id"]}的检查出错\n{format_exc()}')
 
 @sv.on_notice('group_decrease.leave')

@@ -16,9 +16,9 @@ from nonebot import message
 from nonebot import get_bot
 from nonebot import log
 from .PCRClanBattle import ClanBattle
-from hoshino.config.login import viewer_id, uid, access_key, QQGroup, QQid
+from hoshino.config import login as lg
 
-Clan = ClanBattle(viewer_id, uid, access_key)
+Clan = ClanBattle(lg.viewer_id, lg.uid, lg.access_key)
 Push_Score_Lines = None
 Crawl_Score_Lines = None
 minito = 30
@@ -110,7 +110,7 @@ async def push_score_line_scheduled():
     msg_str = get_score_line([1, 2, 3, 20, 50, 100, 150])
     bot = get_bot()
     try:
-        await bot.send_group_msg(group_id=QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
+        await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
     except CQHttpError:
         pass
 
@@ -118,7 +118,7 @@ async def push_laiyin_rank_scheduled():
     msg_str = get_grade_score(15)
     bot = get_bot()
     try:
-        await bot.send_group_msg(group_id=QQGroup, message=message.MessageSegment.text("公会战排名实时播报：\n") + message.MessageSegment.text(msg_str))
+        await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("公会战排名实时播报：\n") + message.MessageSegment.text(msg_str))
     except CQHttpError:
         pass
 
@@ -127,7 +127,7 @@ async def write_down_score_line_scheduled():
     bot = get_bot()
     cnt = 0
     try:
-        await bot.send_private_msg(user_id = QQid, message = message.MessageSegment.text('开始爬取数据'))
+        await bot.send_private_msg(user_id = lg.QQid, message = message.MessageSegment.text('开始爬取数据'))
     except CQHttpError:
         pass
     with open('score_line.csv', 'w', newline='') as f:
@@ -146,7 +146,7 @@ async def write_down_score_line_scheduled():
             log.logger.debug(str(i))
     
     try:
-        await bot.send_private_msg(user_id = QQid, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
+        await bot.send_private_msg(user_id = lg.QQid, message = message.MessageSegment.text('记录成功，共记录数据{}条'.format(cnt)))
     except CQHttpError:
         pass
 
@@ -170,7 +170,7 @@ async def push_top_scheduled():
     msg_str = get_score_line([1, 4, 10, 15, 20, 21])
     bot = get_bot()
     try:
-        await bot.send_group_msg(group_id=QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
+        await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
     except CQHttpError:
         pass
 
