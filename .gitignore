@@ -130,3 +130,4 @@ venv.bak/
 *.csv
 hoshino/modules/pcrjjc3/binds.json
 log/
+config/

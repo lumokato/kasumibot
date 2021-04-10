@@ -16,7 +16,7 @@ from nonebot import message
 from nonebot import get_bot
 from nonebot import log
 from .PCRClanBattle import ClanBattle
-from hoshino.config import login as lg
+from hoshino.config import Luna as lg
 
 Clan = ClanBattle(lg.viewer_id, lg.uid, lg.access_key)
 Push_Score_Lines = None
