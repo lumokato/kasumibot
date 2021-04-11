@@ -69,24 +69,11 @@ async def query_score_line(session):
         msg_str = get_score_line([12, 16, 20, 21])
         await session.send(message.MessageSegment.text(msg_str))
 
-def get_grade_score(rank):
-    global Clan
-    msg_str = ''
-    for i in range(200):
-        tempx = Clan.get_rank_status(i)
-        if tempx['grade_rank'] == rank:
-            msg_str +=  Clan.rank_to_string(tempx)
-            msg_str += '\n'
-            break           
-    if msg_str == '':
-        msg_str = '行会目前暂时超出200名！'
-    return msg_str
-
-
 @on_command('查莱茵', only_to_me = False)
 async def query_laiyin_score(session):
     if session.current_arg == '':
-        msg_str = get_grade_score(15)
+        rank = Clan.get_rank_by_id(6686)
+        msg_str = Clan.rank_to_string(Clan.get_rank_status(rank))
     await session.send(message.MessageSegment.text(msg_str))
 
 @on_command('查页', only_to_me = False)
@@ -115,7 +102,8 @@ async def push_score_line_scheduled():
         pass
 
 async def push_laiyin_rank_scheduled():
-    msg_str = get_grade_score(15)
+    rank = Clan.get_rank_by_id(6686)
+    msg_str = Clan.rank_to_string(Clan.get_rank_status(rank))
     bot = get_bot()
     try:
         await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("公会战排名实时播报：\n") + message.MessageSegment.text(msg_str))

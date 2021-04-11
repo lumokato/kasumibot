@@ -46,14 +46,21 @@ class ClanBattle:
         self.access_key = access_key
         self.Client = PCRClient(viewer_id)
         self.Client.login(uid, access_key)
-        self.clan_id = 6770
+        self.clan_id = 36358
     
     def get_page_status(self, page):
-        temp = self.Client.Callapi('clan_battle/period_ranking', {'clan_id': 6770, 'clan_battle_id': -1, 'period': -1, 'month': 0, 'page': page, 'is_my_clan': 0, 'is_first': 1})
+        temp = self.Client.Callapi('clan_battle/period_ranking', {'clan_id': 36358, 'clan_battle_id': -1, 'period': -1, 'month': 0, 'page': page, 'is_my_clan': 0, 'is_first': 1})
         if 'period_ranking' not in temp:
             self.Client.login(self.uid, self.access_key)
-            temp = self.Client.Callapi('clan_battle/period_ranking', {'clan_id': 6770, 'clan_battle_id': -1, 'period': -1, 'month': 0, 'page': page, 'is_my_clan': 0, 'is_first': 1})
+            temp = self.Client.Callapi('clan_battle/period_ranking', {'clan_id': 36358, 'clan_battle_id': -1, 'period': -1, 'month': 0, 'page': page, 'is_my_clan': 0, 'is_first': 1})
         return temp['period_ranking']
+
+    def get_rank_by_id(self, clan_id):
+        temp = self.Client.Callapi('clan/others_info', {'clan_id': clan_id})
+        if 'clan' not in temp:
+            self.Client.login(self.uid, self.access_key)
+            temp = self.Client.Callapi('others_info', {'clan_id': clan_id})
+        return temp['clan']['detail']['current_period_ranking']
 
     def get_rank_status(self, rank):
         temp1 = self.get_page_status((rank - 1) // 10)
