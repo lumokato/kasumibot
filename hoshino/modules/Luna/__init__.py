@@ -17,6 +17,7 @@ from nonebot import get_bot
 from nonebot import log
 from .PCRClanBattle import ClanBattle
 from hoshino.config import Luna as lg
+from . import clanid
 
 Clan = ClanBattle(lg.viewer_id, lg.uid, lg.access_key)
 Push_Score_Lines = None
@@ -40,17 +41,14 @@ async def query_by_rank(session):
 @on_command('查行会', only_to_me = False)
 async def query_clan_score(session):
     match = session.current_arg
-    print(match)
     global Clan
     msg_str = ''
-    for i in range(200):
-        tempx = Clan.get_rank_status(i)
-        if tempx['clan_name'] == match:
-            msg_str +=  Clan.rank_to_string(Clan.get_rank_status(i), long_info=True)
-            msg_str += '\n'
-            break 
-    if msg_str == '':
-        msg_str = '未找到此行会或行会目前暂时超出200名！'             
+    try:
+        id_match = clanid[match]
+        rank = Clan.get_rank_by_id(id_match)
+        msg_str = Clan.rank_to_string(Clan.get_rank_status(rank))
+    except:
+        msg_str = '未找到此行会！'
     await session.send(message.MessageSegment.text(msg_str))
 
 def get_score_line(lst):
