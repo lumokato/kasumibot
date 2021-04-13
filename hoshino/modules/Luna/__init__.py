@@ -24,6 +24,7 @@ Push_Score_Lines = None
 Crawl_Score_Lines = None
 minito = 30
 minito2 = 240
+
 @on_command('查排名', only_to_me = False)
 async def query_by_rank(session):
     match = re.match(r'^(\d+)', session.current_arg)
@@ -42,12 +43,11 @@ async def query_by_rank(session):
 async def query_clan_score(session):
     match = session.current_arg
     global Clan
-    msg_str = ''
     try:
-        id_match = clanid.str(match)
+        id_match = clanid.clanid_dict[match]
         rank = Clan.get_rank_by_id(id_match)
         msg_str = Clan.rank_to_string(Clan.get_rank_status(rank))
-    except:
+    except KeyError:
         msg_str = '未找到此行会！'
     await session.send(message.MessageSegment.text(msg_str))
 
