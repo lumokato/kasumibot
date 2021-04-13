@@ -44,7 +44,7 @@ async def query_clan_score(session):
     global Clan
     msg_str = ''
     try:
-        id_match = clanid[match]
+        id_match = clanid.str(match)
         rank = Clan.get_rank_by_id(id_match)
         msg_str = Clan.rank_to_string(Clan.get_rank_status(rank))
     except:
