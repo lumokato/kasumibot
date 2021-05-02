@@ -65,7 +65,7 @@ async def request(method, url, **kwargs) -> AsyncResponse:
                                              method=method, url=url, **kwargs))
 
 
-async def get(url, params=None, **kwargs) -> AsyncResponse:
+async def get(url, params=None, verify=False, **kwargs) -> AsyncResponse:
     return AsyncResponse(
         await run_sync_func(requests.get, url=url, params=params, **kwargs))
 
