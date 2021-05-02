@@ -43,6 +43,6 @@ MODULES_ON = {
     'Luna',
     'pcrjjc3',
     # 'setu',
-    # 'translate',
+    'pcr_calendar',
     # 'twitter',
 }
