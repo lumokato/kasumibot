@@ -5,8 +5,6 @@ import aiohttp
 import asyncio
 import math
 import ssl
-#取消证书验证，防止无法获取网站数据
-ssl._create_default_https_context = ssl._create_unverified_context
 # type 0普通 1双倍 2 公会战 3 活动
 
 event_data = {
@@ -29,7 +27,7 @@ lock = {
 
 async def query_data(url):
     try:
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=64,verify_ssl=False)) as session:
             async with session.get(url) as resp:
                 return await resp.json()
     except:
