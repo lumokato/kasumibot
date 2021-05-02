@@ -42,7 +42,7 @@ MODULES_ON = {
     #'priconne',
     'Luna',
     'pcrjjc3',
-    # 'setu',
+    'Salmon-BandoriStation',
     'pcr_calendar',
     # 'twitter',
 }
