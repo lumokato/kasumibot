@@ -4,7 +4,9 @@ import datetime
 import aiohttp
 import asyncio
 import math
-
+import ssl
+#取消证书验证，防止无法获取网站数据
+ssl._create_default_https_context = ssl._create_unverified_context
 # type 0普通 1双倍 2 公会战 3 活动
 
 event_data = {
@@ -119,7 +121,6 @@ async def get_events(server, offset, days):
     start = pcr_now + datetime.timedelta(days=offset)
     end = start + datetime.timedelta(days=days)
     end -= datetime.timedelta(hours=18)  #晚上12点结束
-
     for event in event_data[server]:
         if end > event['start'] and start < event['end']: #在指定时间段内 已开始 且 未结束
             event['start_days'] = math.ceil((event['start'] - start) / datetime.timedelta(days=1)) #还有几天开始
