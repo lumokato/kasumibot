@@ -20,7 +20,8 @@ def decrypt(encrypted):
     cryptor=AES.new(key,mode, vi)
     plain_text  = cryptor.decrypt(ss2)
     try:
-        return msgpack.unpackb(plain_text)
+        return msgpack.unpackb(plain_text[:-plain_text[-1]],
+            strict_map_key = False)
     except msgpack.ExtraData as err:
         return err.unpacked
     except:
