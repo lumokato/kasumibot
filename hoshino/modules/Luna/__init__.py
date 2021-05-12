@@ -22,7 +22,7 @@ from . import clanid
 Clan = ClanBattle(lg.viewer_id, lg.uid, lg.access_key)
 Push_Score_Lines = None
 Crawl_Score_Lines = None
-minito = 30
+minito = 90
 minito2 = 240
 
 @on_command('查排名', only_to_me = False)
@@ -64,7 +64,7 @@ async def query_score_line(session):
     if session.current_arg == '':
         msg_str = get_score_line([1, 3, 6, 10])
         await session.send(message.MessageSegment.text(msg_str))
-        msg_str = get_score_line([12, 16, 20, 21])
+        msg_str = get_score_line([11, 12, 13, 16])
         await session.send(message.MessageSegment.text(msg_str))
 
 @on_command('查莱茵', only_to_me = False)
@@ -160,15 +160,15 @@ async def push_top_scheduled():
     except CQHttpError:
         pass
 
-@on_command('开启自动推送档线', only_to_me = False, permission = perm.SUPERUSER)
+@on_command('开启推送档线', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_top(session):
-    scheduler.add_job(push_top_scheduled, 'interval', minutes = minito2)
+    scheduler.add_job(push_top_scheduled, 'interval', minutes = minito2, start_date='2021-05-13 01:01:00')
     await session.send(message.MessageSegment.text('每4小时会自动推送前20档线'))
 
-@on_command('开启自动推送排名', only_to_me = False, permission = perm.SUPERUSER)
+@on_command('开启推送排名', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_score_line(session):
     scheduler.add_job(push_laiyin_rank_scheduled, 'interval', minutes = minito)
-    await session.send(message.MessageSegment.text('每30min会自动推送当前排名'))
+    await session.send(message.MessageSegment.text('每90分钟会自动推送当前排名'), start_date='2021-05-13 01:00:30')
 
 @on_command('开启爬取数据', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_crawl_score_line(session):
@@ -203,12 +203,12 @@ async def set_close_crawl_score_line(session):
             Crawl_Score_Lines = None
         await session.send(message.MessageSegment.text('自动爬取数据已关闭'))
 
-@on_command('排名指令查询', only_to_me = False)
+@on_command('排名指令', only_to_me = False)
 async def set_clan_help(session):
     readme = "按排名查询：查排名 数字（例如：查排名 11）" + "\n" + \
              "按名称查询：查行会 名称（例如：查行会 莱茵骑士团）" + "\n" + \
              "查询当前前20名档线：查档线"  + "\n" + \
              "查询本公会排名：查莱茵"  + "\n" + \
-             "每4小时推送当前档线：开启自动推送档线（超级用户限定）"  + "\n" + \
-             "每30分钟推送当前公会排名：开启自动推送排名（超级用户限定）"
+             "每4小时推送当前档线：开启推送档线（超级用户限定）"  + "\n" + \
+             "每90分钟推送当前公会排名：开启推送排名（超级用户限定）"
     await session.send(message.MessageSegment.text(readme))
