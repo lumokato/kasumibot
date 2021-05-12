@@ -160,12 +160,12 @@ async def push_top_scheduled():
     except CQHttpError:
         pass
 
-@on_command('开启推送档线', only_to_me = False, permission = perm.SUPERUSER)
+@on_command('开启自动推送档线', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_top(session):
     scheduler.add_job(push_top_scheduled, 'interval', minutes = minito2, start_date='2021-05-13 01:01:00')
     await session.send(message.MessageSegment.text('每4小时会自动推送前20档线'))
 
-@on_command('开启推送排名', only_to_me = False, permission = perm.SUPERUSER)
+@on_command('开启自动推送排名', only_to_me = False, permission = perm.SUPERUSER)
 async def set_open_score_line(session):
     scheduler.add_job(push_laiyin_rank_scheduled, 'interval', minutes = minito)
     await session.send(message.MessageSegment.text('每90分钟会自动推送当前排名'), start_date='2021-05-13 01:00:30')
