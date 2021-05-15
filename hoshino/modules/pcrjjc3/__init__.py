@@ -101,6 +101,33 @@ f'''
             client.login(lg.uid, lg.access_key)
             await bot.finish(ev, f'查询出错', at_sender=True)
 
+@sv.on_rex(r'^竞技场分组查询 ?(\d{13})?$')
+async def on_query_arena(bot, ev):
+    global binds, lck
+
+    robj = ev['match']
+    id = robj.group(1)
+
+    async with lck:
+        if id == None:
+            uid = str(ev['user_id'])
+            if not uid in binds:
+                await bot.finish(ev, '您还未绑定竞技场', at_sender=True)
+                return
+            else:
+                id = binds[uid]['id']
+        try:
+            res = await query(id)
+            await bot.finish(ev, 
+f'''
+用户名称：{res["user_name"]}
+竞技场分组：{res["arena_group"]}
+竞技场排名：{res["arena_rank"]}
+公主竞技场分组：{res["grand_arena_group"]}
+公主竞技场排名：{res["grand_arena_rank"]}''', at_sender=True)
+        except KeyError:
+            client.login(lg.uid, lg.access_key)
+            await bot.finish(ev, f'查询出错', at_sender=True)
 
 @sv.on_rex('(启用|停止)(公主)?竞技场订阅')
 async def change_arena_sub(bot, ev):
