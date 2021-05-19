@@ -118,7 +118,7 @@ async def cygames_voice_guess(bot, ev: CQEvent):
         c = chara.fromid(game.answer)
     await bot.send(ev, f"正确答案是: {c.name} {c.icon.cqcode}\n很遗憾，没有人答对~")
 
-@sv.on_prefix('猜语音')
+@sv.on_prefix('猜声音')
 async def voice_guess(bot, ev: CQEvent):
     if gm.is_playing(ev.group_id):
         await bot.finish(ev, "游戏仍在进行中…")
