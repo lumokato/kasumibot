@@ -44,5 +44,5 @@ MODULES_ON = {
     'pcrjjc3',
     #'Salmon-BandoriStation',
     'pcr_calendar',
-    # 'twitter',
+    'Majsoul_bot',
 }
