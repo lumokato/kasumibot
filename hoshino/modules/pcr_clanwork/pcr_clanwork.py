@@ -94,7 +94,7 @@ async def qwork(bot, ev:CQEvent):
         await bot.finish(ev, f'没有找到{work}的作业')
     for file in os.listdir(cpath):
         fnum = file[:-4]
-        img.append(f'{fnum}：[CQ:image,file=file:///{cpath}/{file}]\n')
+        img.append(f'{fnum}：[CQ:image,file={cpath}/{file}]\n')
     msg = ''.join(img)
     await bot.send(ev, f'已找到{num}份{work}作业：\n{msg}', at_sender=True)
 
