@@ -89,12 +89,13 @@ async def qwork(bot, ev:CQEvent):
     gid = ev.group_id
     work = ev.message.extract_plain_text().strip().lower()
     cpath = R.img(f'clanwork/{gid}/{work}').path
+    print(os.path.abspath(cpath))
     num = get_list_num(gid, work)[1]
     if num == 0:
         await bot.finish(ev, f'没有找到{work}的作业')
     for file in os.listdir(cpath):
         fnum = file[:-4]
-        img.append(f'{fnum}：[CQ:image,file=./{cpath}/{file}]\n')
+        img.append(f'{fnum}：[CQ:image,file={cpath}/{file}]\n')
     msg = ''.join(img)
     await bot.send(ev, f'已找到{num}份{work}作业：\n{msg}', at_sender=True)
 
