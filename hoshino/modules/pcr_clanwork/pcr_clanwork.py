@@ -21,7 +21,7 @@ num：指第几个作业，使用查作业指令获取数字
 
 sv = Service('pcr_work', enable_on_default=True, visible=True, help_=help)
 
-BOSS = ['a1','a2','a3','a4','a5','a5-1','a5-2','b1','b2','b3','b4','b5','b5-1','b5-2','c1','c2','c3','c4','c5','c5-1','c5-2']
+BOSS = ['a1','a2','a3','a4','a5','b1','b2','b3','b4','b5','c1','c2','c3','c4','c5']
 
 class clanwork():
     def __init__(self):
