@@ -40,7 +40,7 @@ MODULES_ON = {
     'voiceguess',
     #'pcrclanbattle',
     #'priconne',
-    #'Luna',
+    'Luna',
     'pcrjjc3',
     #'Salmon-BandoriStation',
     'pcr_calendar',
