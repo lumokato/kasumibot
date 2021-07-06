@@ -59,12 +59,12 @@ def get_score_line(lst):
         msg_str += '\n'
     return msg_str
 
-@on_command('查档线', only_to_me = False)
+@on_command('查前十', only_to_me = False)
 async def query_score_line(session):
     if session.current_arg == '':
-        msg_str = get_score_line([1, 3, 6, 10])
+        msg_str = get_score_line([1, 2, 3, 4, 5])
         await session.send(message.MessageSegment.text(msg_str))
-        msg_str = get_score_line([11, 12, 13, 16])
+        msg_str = get_score_line([6, 7, 8, 9, 10])
         await session.send(message.MessageSegment.text(msg_str))
 
 @on_command('查莱茵', only_to_me = False)
@@ -92,7 +92,7 @@ async def query_page_score(session):
 
 
 async def push_score_line_scheduled():
-    msg_str = get_score_line([1, 2, 3, 20, 50, 100, 150])
+    msg_str = get_score_line([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     bot = get_bot()
     try:
         await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
@@ -153,7 +153,7 @@ async def set_open_score_line(session):
     await session.send(message.MessageSegment.text('每日{}:{}会自动推送当前档线'.format(str(hour).zfill(2), str(minute).zfill(2))))
 
 async def push_top_scheduled():
-    msg_str = get_score_line([1, 4, 10, 15, 20, 21])
+    msg_str = get_score_line([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     bot = get_bot()
     try:
         await bot.send_group_msg(group_id=lg.QQGroup, message=message.MessageSegment.text("截至当前的档线：\n") + message.MessageSegment.text(msg_str))
