@@ -217,7 +217,7 @@ async def on_arena_schedule():
                     message = f'[CQ:at,qq={info["uid"]}]您的竞技场排名发生变化：{last[0]}->{res[0]}，降低了{res[0]-last[0]}名。'
                 )
 
-            if res[1] > last[1] and info['grand_arena_on']:
+            if res[1] != last[1] and info['grand_arena_on']:
                 await bot.send_group_msg(
                     group_id = int(info['gid']),
                     message = f'[CQ:at,qq={info["uid"]}]您的公主竞技场排名发生变化：{last[1]}->{res[1]}，降低了{res[1]-last[1]}名。'
