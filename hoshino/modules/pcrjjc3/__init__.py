@@ -211,7 +211,7 @@ async def on_arena_schedule():
             last = cache[user]
             cache[user] = res
 
-            if res[0] > last[0] and info['arena_on']:
+            if res[0] != last[0] and info['arena_on']:
                 await bot.send_group_msg(
                     group_id = int(info['gid']),
                     message = f'[CQ:at,qq={info["uid"]}]您的竞技场排名发生变化：{last[0]}->{res[0]}，降低了{res[0]-last[0]}名。'
