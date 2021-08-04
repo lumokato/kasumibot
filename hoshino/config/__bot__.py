@@ -42,7 +42,7 @@ MODULES_ON = {
     #'priconne',
     'Luna',
     'pcrjjc3',
-    #'Salmon-BandoriStation',
+    'yobot',
     'pcr_calendar',
     'pcr_clanwork',
 }
