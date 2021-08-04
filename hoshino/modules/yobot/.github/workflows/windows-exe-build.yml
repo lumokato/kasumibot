@@ -1,0 +1,73 @@
+name: windows-exe-build
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: windows-2019
+    name: build windows binary
+
+    steps:
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.7"
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Cache Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~\AppData\Local\pip\Cache
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
+      - name: Build exe binary and archive
+        shell: cmd
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          cd .\src\client
+
+          echo ::group::Install Dependencies
+          pip install wheel
+          pip install pyinstaller -r requirements.txt
+          echo ::endgroup::
+
+          echo ::group::Build Binary
+          SET PYTHONOPTIMIZE=1
+          pyinstaller main.spec
+          echo ::endgroup::
+
+          echo ::group::Archive Binary
+          cd .\dist
+          7z a yobot-windows64.zip .\yobot.exe
+          echo ::endgroup::
+
+      - name: Get release version
+        run: |
+          echo "RELEASE_VER=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./src/client/dist/yobot-windows64.zip
+          asset_name: yobot-${RELEASE_VER#v}-windows64.zip
+          asset_content_type: application/zip
